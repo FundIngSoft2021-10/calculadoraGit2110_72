@@ -12,5 +12,6 @@ package mycalculator;
 public class Authors {
     
     public static final String AMP = "Anabel Montero Posada";
+    public static final String SFCM = "Samy Felipe Cuestas Merchan";
     
 }
