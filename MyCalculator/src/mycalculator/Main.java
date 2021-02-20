@@ -18,8 +18,8 @@ public class Main {
         
         //Create calculator implementation
         System.out.println("Git Calculator!");
-<<<<<<< HEAD
-        
+
+        pruebasCalculadoraSFCM();
         pruebasCalculadoraDCFG();
     }
     
@@ -38,10 +38,9 @@ public class Main {
 		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
 		System.out.println(a+"/"+b+"="+calcu.divide(a, b));
 	}
-}
-=======
-        pruebasCalculadoraSFCM();
-    }
+
+        
+    
     public static void pruebasCalculadoraSFCM()
     {
         double a = 80;
@@ -58,4 +57,3 @@ public class Main {
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 }
->>>>>>> 4428699c887f6ba9550edd3e2db328031d65b8d5
