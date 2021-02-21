@@ -17,5 +17,10 @@ public class Authors {
     public static final String JACS = "Jimmy Alejandro Castro Sabogal";
     public static final String JDTG = "Juan Daniel Traslavina Guevara";
     public static final String JCMH = "Juan Camilo Mendieta Hernandez";
+<<<<<<< HEAD
     public static final String EAVB = "Esteban Alejandro Villa Berrio";
+=======
+    public static final String JERB = "Juan Esteban Rincon Bautista";
+    public static final String DSMC = "David Santiago Meneses Cifuentes";
+>>>>>>> 2546e0177f70a35fda07f1fb482b9e9f9141bba9
 }
