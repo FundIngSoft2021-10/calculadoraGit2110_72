@@ -1,1 +1,6 @@
 /bin/
+/MyCalculator/build/
+<<<<<<< HEAD
+=======
+/MyCalculator/dist/
+>>>>>>> 2546e0177f70a35fda07f1fb482b9e9f9141bba9
