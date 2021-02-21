@@ -162,4 +162,20 @@ public class Main {
 
         System.out.println(numa + " / " + numb + " = " + calculadora.divide(numa, numb));
     }
+     
+     public static void pruebasCalculadoraNBS() {
+ 		
+    	double a = 20; 
+    	double b = 2; 
+ 		CalculadoraNBS calculator = new CalculadoraNBS(); 
+ 		
+ 		System.out.println("Suma de a y b="+calculator.add(a, b));
+ 		
+ 		System.out.println("Resta de a y b="+calculator.substract(a, b));
+ 		
+ 		System.out.println("Multiplicacion de a y b="+calculator.multiply(a, b));
+
+ 		System.out.println("Dividicion de a y b="+calculator.divide(a, b));			
+
+ 	}
 }
