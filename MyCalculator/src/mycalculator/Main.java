@@ -15,16 +15,14 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        Main p = new Main();
         //Create calculator implementation
         System.out.println("Git Calculator!");
-
         pruebasCalculadoraSFCM();
         pruebasCalculadoraDCFG();
+        p.pruebaCalculadoraJACS(1, 0);
     }
     
-
-
 	public static void pruebasCalculadoraDCFG() {
 		
 		double a=15;
@@ -36,10 +34,26 @@ public class Main {
 		System.out.println(a+"+"+b+"="+calcu.add(a, b));
 		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
 		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
-		System.out.println(a+"/"+b+"="+calcu.divide(a, b));
+		try {
+			System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+		}catch(ArithmeticException ex) {
+			System.out.println("Error: " + ex.getMessage());
+		}
 	}
-
-        
+	
+	public void pruebaCalculadoraJACS(double a,double b) {
+		CalculatorJACS c = new CalculatorJACS();
+		System.out.println(c.about());
+		System.out.println("Numbers a = " + a + ", b = " + b + "");
+		System.out.println("Addition: " + c.add(a, b));
+		System.out.println("Substraction: " + c.substract(a, b));
+		System.out.println("Product: " + c.multiply(a, b));
+		try {			
+			System.out.println("Quotient: " + c.divide(a, b));
+		}catch(ArithmeticException x) {
+			System.out.println("Error al dividir: " + x.getMessage());
+		}
+	}
     
     public static void pruebasCalculadoraSFCM()
     {
