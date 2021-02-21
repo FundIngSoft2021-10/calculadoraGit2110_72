@@ -26,7 +26,10 @@ public class Main {
         pruebasCalculadoraJCMH();
         pruebasCalculadoraSFB(1, 1);
         pruebasCalculadoraDSMC();
+        pruebasCalculadoraEAVB();
         pruebasCalculadoraSTM();
+        pruebasCalculadoraNBS();
+
     }
    
 
@@ -166,6 +169,7 @@ public class Main {
     }
      
 
+
      public static void pruebasCalculadoraNBS() {
  		
     	double a = 20; 
@@ -180,6 +184,25 @@ public class Main {
 
  		System.out.println("Dividicion de a y b="+calculator.divide(a, b));			
 
+ 	}
+
+
+     public static void pruebasCalculadoraEAVB() {
+ 		
+ 		double a=150;
+ 		double b=332;
+ 		
+ 		CalculadoraEAVB calcu= new CalculadoraEAVB();
+ 		
+ 		System.out.println(calcu.about());
+ 		System.out.println(a+"+"+b+"="+calcu.add(a, b));
+ 		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
+ 		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
+ 		try {
+ 			System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+ 		}catch(ArithmeticException ex) {
+ 			System.out.println("Error: " + ex.getMessage());
+ 		}
  	}
 
      public static void pruebasCalculadoraSTM() {
