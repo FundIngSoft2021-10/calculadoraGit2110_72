@@ -23,6 +23,7 @@ public class Main {
         p.pruebaCalculadoraJACS(1, 0);
         pruebasCalculadoraJDTG();
         pruebaCalculadoraJERB();
+        pruebasCalculadoraJCMH();
     }
     
 	public static void pruebasCalculadoraDCFG() {
@@ -109,5 +110,21 @@ public class Main {
         }catch(ArithmeticException ex) {
             System.out.println("Error: " + ex.getMessage());
 	}
+    }
+    public static void pruebasCalculadoraJCMH()
+    {
+        double a = 10;
+        double b = 5;
+        CalculadoraJCMH calculadora = new CalculadoraJCMH();
+
+        System.out.println(calculadora.about());
+
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 }
