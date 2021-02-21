@@ -22,6 +22,7 @@ public class Main {
         pruebasCalculadoraDCFG();
         p.pruebaCalculadoraJACS(1, 0);
         pruebasCalculadoraJDTG();
+        pruebaCalculadoraJERB();
     }
     
 	public static void pruebasCalculadoraDCFG() {
@@ -85,6 +86,25 @@ public class Main {
 
         System.out.println(a + " * " + b + " = " + calc.multiply(a, b));
         try{
+            System.out.println(a + " / " + b + " = " + calc.divide(a, b));
+        }catch(ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+	}
+    }
+    public static void pruebaCalculadoraJERB()
+    {
+        double a = 20;
+        double b = 10;
+        CalculadoraJERB calc = new CalculadoraJERB();
+        System.out.println(calc.about());
+        
+         System.out.println(a + " + " + b + " = " + calc.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calc.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calc.multiply(a, b));
+
+       try{
             System.out.println(a + " / " + b + " = " + calc.divide(a, b));
         }catch(ArithmeticException ex) {
             System.out.println("Error: " + ex.getMessage());
