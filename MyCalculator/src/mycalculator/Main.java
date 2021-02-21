@@ -24,6 +24,7 @@ public class Main {
         pruebasCalculadoraJDTG();
         pruebaCalculadoraJERB();
         pruebasCalculadoraJCMH();
+        pruebasCalculadoraSFB(1, 1);
         pruebasCalculadoraDSMC();
     }
     
@@ -128,6 +129,23 @@ public class Main {
 
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
+    
+    public static void pruebasCalculadoraSFB(double a, double b){
+        
+        CalculadoraSFB calculadora = new CalculadoraSFB();
+
+        System.out.println(calculadora.about());
+
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
+       
+    }
+    
      public static void pruebasCalculadoraDSMC()
     {
         double numa = 1000;
