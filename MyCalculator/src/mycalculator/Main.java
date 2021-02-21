@@ -26,6 +26,7 @@ public class Main {
         pruebasCalculadoraJCMH();
         pruebasCalculadoraSFB(1, 1);
         pruebasCalculadoraDSMC();
+        pruebasCalculadoraEAVB();
     }
     
 	public static void pruebasCalculadoraDCFG() {
@@ -162,4 +163,22 @@ public class Main {
 
         System.out.println(numa + " / " + numb + " = " + calculadora.divide(numa, numb));
     }
+     
+     public static void pruebasCalculadoraEAVB() {
+ 		
+ 		double a=150;
+ 		double b=332;
+ 		
+ 		CalculadoraEAVB calcu= new CalculadoraEAVB();
+ 		
+ 		System.out.println(calcu.about());
+ 		System.out.println(a+"+"+b+"="+calcu.add(a, b));
+ 		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
+ 		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
+ 		try {
+ 			System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+ 		}catch(ArithmeticException ex) {
+ 			System.out.println("Error: " + ex.getMessage());
+ 		}
+ 	}
 }
