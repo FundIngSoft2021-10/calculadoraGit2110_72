@@ -19,4 +19,5 @@ public class Authors {
     public static final String JCMH = "Juan Camilo Mendieta Hernandez";
     public static final String JERB = "Juan Esteban Rincon Bautista";
     public static final String SFB = "Santiago Fernandez Becerra";
+    public static final String DSMC = "David Santiago Meneses Cifuentes";
 }
