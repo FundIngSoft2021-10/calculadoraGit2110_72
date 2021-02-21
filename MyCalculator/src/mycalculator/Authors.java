@@ -22,5 +22,6 @@ public class Authors {
     public static final String SFB = "Santiago Fernandez Becerra";
     public static final String DSMC = "David Santiago Meneses Cifuentes";
     public static final String NBS = "Nicolas Barragan Sanchez";
+    public static final String MAUG = "Miguel Angel Uribe Garcia";
 
 }
