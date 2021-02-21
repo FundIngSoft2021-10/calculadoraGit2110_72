@@ -26,9 +26,14 @@ public class Main {
         pruebasCalculadoraJCMH();
         pruebasCalculadoraSFB(1, 1);
         pruebasCalculadoraDSMC();
+<<<<<<< HEAD
         pruebasCalculadoraEAVB();
+=======
+        pruebasCalculadoraSTM();
+>>>>>>> bfcc29cafac5ee005fa3279ec51031a4d6aae6f5
     }
-    
+   
+
 	public static void pruebasCalculadoraDCFG() {
 		
 		double a=15;
@@ -164,6 +169,7 @@ public class Main {
         System.out.println(numa + " / " + numb + " = " + calculadora.divide(numa, numb));
     }
      
+<<<<<<< HEAD
      public static void pruebasCalculadoraEAVB() {
  		
  		double a=150;
@@ -181,4 +187,23 @@ public class Main {
  			System.out.println("Error: " + ex.getMessage());
  		}
  	}
+=======
+     public static void pruebasCalculadoraSTM() {
+ 		double a = 60;
+         double b = 30;
+         CalculadoraJDTG  cal = new CalculadoraJDTG();
+         System.out.println(cal.about());
+
+         System.out.println(a + " + " + b + " = " + cal.add(a, b));
+
+         System.out.println(a + " - " + b + " = " + cal.substract(a, b));
+
+         System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
+         try{
+             System.out.println(a + " / " + b + " = " + cal.divide(a, b));
+         }catch(ArithmeticException ex) {
+             System.out.println("Error: " + ex.getMessage());
+         }
+ 	 }
+>>>>>>> bfcc29cafac5ee005fa3279ec51031a4d6aae6f5
 }

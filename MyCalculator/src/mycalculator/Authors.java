@@ -21,5 +21,11 @@ public class Authors {
     public static final String JERB = "Juan Esteban Rincon Bautista";
     public static final String SFB = "Santiago Fernandez Becerra";
     public static final String DSMC = "David Santiago Meneses Cifuentes";
+<<<<<<< HEAD
+=======
+    public static final String NBS = "Nicolas Barragan Sanchez";
+    public static final String STM = "Santiago Torres Meneses";
+
+>>>>>>> bfcc29cafac5ee005fa3279ec51031a4d6aae6f5
 
 }
