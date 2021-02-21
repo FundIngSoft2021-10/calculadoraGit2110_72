@@ -33,7 +33,7 @@ public class CalculadoraJERB implements ICalculator{
 
     @Override
     public String about() {
-        return "Calculator implementend by <<Authors.JERB>>";
+        return "Calculator implementend by "+Authors.JERB;
     }
     
 }
