@@ -21,6 +21,7 @@ public class Main {
         pruebasCalculadoraSFCM();
         pruebasCalculadoraDCFG();
         p.pruebaCalculadoraJACS(1, 0);
+        pruebasCalculadoraJDTG();
     }
     
 	public static void pruebasCalculadoraDCFG() {
@@ -69,5 +70,24 @@ public class Main {
         System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
 
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
+    }
+    
+    public static void pruebasCalculadoraJDTG()
+    {
+        double a = 30;
+        double b = 15;
+        CalculadoraJDTG  calc = new CalculadoraJDTG();
+        System.out.println(calc.about());
+
+        System.out.println(a + " + " + b + " = " + calc.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calc.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calc.multiply(a, b));
+        try{
+            System.out.println(a + " / " + b + " = " + calc.divide(a, b));
+        }catch(ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+	}
     }
 }

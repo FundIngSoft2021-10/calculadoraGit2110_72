@@ -15,5 +15,5 @@ public class Authors {
     public static final String SFCM = "Samy Felipe Cuestas Merchan";
     public static final String DCFG = "Daniel Camilo Fierro Garcia";
     public static final String JACS = "Jimmy Alejandro Castro Sabogal";
-    
+    public static final String JDTG = "Juan Daniel Traslavina Guevara";
 }
