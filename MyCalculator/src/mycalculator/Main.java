@@ -31,16 +31,13 @@ public class Main {
         pruebasCalculadoraNBS();
         pruebasCalculadoraSETB();
         pruebasCalculadoraJAMA();
+	pruebasCalculadoraEAJ();
         pruebasCalculadoraDGA();
-	    pruebasCalculadoraCHG();
-   
-
-
-
+	pruebasCalculadoraCHG();
         pruebasCalculadoraCEET();
 
 }
-	pruebasCalculadoraCHG();
+	
     }
    
     public static void pruebasCalculadoraSETB(){
@@ -269,6 +266,25 @@ public class Main {
                }
        }
 
+	public static void pruebasCalculadoraEAJ() {
+
+               double a=19999;
+               double b=52;
+
+               CalculadoraJAMA Jama= new CalculadoraEAJ();
+
+               System.out.println(Jama.about());
+               System.out.println(a + " + " + b + " = " + Jama.add(a, b));
+               System.out.println(a + " - " + b + " = " +Jama.substract(a, b));
+               System.out.println(a + " * " + b + " = " +Jama.multiply(a, b));
+               try {
+                       System.out.println( a + " / " + b + " = " + Jama.divide(a, b));			
+               }catch(ArithmeticException ex) {
+                       System.out.println("Error: " + ex.getMessage());
+               }
+       }
+
+
 
     public static void pruebasCalculadoraDGA(){
     	double a=1;
@@ -338,22 +354,6 @@ public class Main {
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
-    public static void pruebasCalculadoraCHG()
-    {
-        double a = 1;
-        double b = 2;
-        CalculadoraCHG calculadora = new CalculadoraCHG();
-
-        System.out.println(calculadora.about());
-
-        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
-
-        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
-
-        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
-
-        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
-    }
 
 
 }
