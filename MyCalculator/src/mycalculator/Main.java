@@ -271,7 +271,7 @@ public class Main {
                double a=19999;
                double b=52;
 
-               CalculadoraJAMA Jama= new CalculadoraEAJ();
+               CalculadoraEAJ calculEAJ= new CalculadoraEAJ();
 
                System.out.println(Jama.about());
                System.out.println(a + " + " + b + " = " + Jama.add(a, b));
