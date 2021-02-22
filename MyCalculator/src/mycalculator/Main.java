@@ -30,6 +30,7 @@ public class Main {
         pruebasCalculadoraSTM();
         pruebasCalculadoraNBS();
         pruebasCalculadoraSETB();
+        pruebasCalculadoraJAMA();
     }
    
     public static void pruebasCalculadoraSETB(){
@@ -240,4 +241,21 @@ public class Main {
          }
  	 }
 
+    public static void pruebasCalculadoraJAMA() {
+
+               double a=10;
+               double b=26;
+
+               CalculadoraJAMA Jama= new CalculadoraJAMA();
+
+               System.out.println(Jama.about());
+               System.out.println(a + " + " + b + " = " + Jama.add(a, b));
+               System.out.println(a + " - " + b + " = " +Jama.substract(a, b));
+               System.out.println(a + " * " + b + " = " +Jama.multiply(a, b));
+               try {
+                       System.out.println( a + " / " + b + " = " + Jama.divide(a, b));			
+               }catch(ArithmeticException ex) {
+                       System.out.println("Error: " + ex.getMessage());
+               }
+       }
 }
