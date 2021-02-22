@@ -27,9 +27,27 @@ public class Main {
         pruebasCalculadoraSFB(1, 1);
         pruebasCalculadoraDSMC();
         pruebasCalculadoraSTM();
+        pruebasCalculadoraSETB();
     }
    
-
+    public static void pruebasCalculadoraSETB(){
+    	double a=3;
+		double b=2;
+		
+		CalculadoraSETB calcu= new CalculadoraSETB();
+		
+		System.out.println(calcu.about());
+		System.out.println(a+"+"+b+"="+calcu.add(a, b));
+		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
+		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
+		try {
+			System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+		}catch(ArithmeticException ex) {
+			System.out.println("Error: " + ex.getMessage());
+		}
+    }
+    
+    
 	public static void pruebasCalculadoraDCFG() {
 		
 		double a=15;
