@@ -276,7 +276,7 @@ public class Main {
 		System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
         if(b != 0)
         {
-            System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+            System.out.println(a+"/"+b+"="+calculadora.divide(a, b));			
         }
         else
         {
