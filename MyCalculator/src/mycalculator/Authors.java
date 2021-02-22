@@ -24,6 +24,8 @@ public class Authors {
     public static final String NBS = "Nicolas Barragan Sanchez";
     public static final String STM = "Santiago Torres Meneses";
     public static final String SETB = "Sergio Esteban Triana Bobadilla";
+    public static final String SARB = "Santiago Alexander Rodríguez Becerra";
+
 
 
 }
