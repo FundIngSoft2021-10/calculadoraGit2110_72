@@ -32,6 +32,7 @@ public class Main {
         pruebasCalculadoraSETB();
         pruebasCalculadoraJAMA();
         pruebasCalculadoraDGA();
+	pruebasCalculadoraCHG();
     }
    
     public static void pruebasCalculadoraSETB(){
@@ -284,6 +285,23 @@ public class Main {
         }
 		
 		
+    }
+
+    public static void pruebasCalculadoraCHG()
+    {
+        double a = 1;
+        double b = 2;
+        CalculadoraCHG calculadora = new CalculadoraCHG();
+
+        System.out.println(calculadora.about());
+
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
 

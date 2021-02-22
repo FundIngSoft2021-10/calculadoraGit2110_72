@@ -26,4 +26,5 @@ public class Authors {
     public static final String JAMA = "Juan Andres Martinez Amado";
     public static final String EAJ = "Estefania Aristizabal Jimenez";
     public static final String DGA = "David Gutierrez Alarcon";
+    public static final String CHG = "Camilo Hernández Guerrero";
 }
