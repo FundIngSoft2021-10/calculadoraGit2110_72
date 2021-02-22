@@ -26,7 +26,29 @@ public class Main {
         pruebasCalculadoraJCMH();
         pruebasCalculadoraSFB(1, 1);
         pruebasCalculadoraDSMC();
+        pruebasCalculadoraEAVB();
+        pruebasCalculadoraSTM();
+        pruebasCalculadoraNBS();
+        pruebasCalculadoraSETB();
     }
+   
+    public static void pruebasCalculadoraSETB(){
+    	double a=3;
+		double b=2;
+		
+		CalculadoraSETB calcu= new CalculadoraSETB();
+		
+		System.out.println(calcu.about());
+		System.out.println(a+"+"+b+"="+calcu.add(a, b));
+		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
+		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
+		try {
+			System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+		}catch(ArithmeticException ex) {
+			System.out.println("Error: " + ex.getMessage());
+		}
+    }
+    
     
 	public static void pruebasCalculadoraDCFG() {
 		
@@ -162,4 +184,60 @@ public class Main {
 
         System.out.println(numa + " / " + numb + " = " + calculadora.divide(numa, numb));
     }
+     
+
+
+     public static void pruebasCalculadoraNBS() {
+ 		
+    	double a = 20; 
+    	double b = 2; 
+ 		CalculadoraNBS calculator = new CalculadoraNBS(); 
+ 		
+ 		System.out.println("Suma de a y b="+calculator.add(a, b));
+ 		
+ 		System.out.println("Resta de a y b="+calculator.substract(a, b));
+ 		
+ 		System.out.println("Multiplicacion de a y b="+calculator.multiply(a, b));
+
+ 		System.out.println("Dividicion de a y b="+calculator.divide(a, b));			
+
+ 	}
+
+
+     public static void pruebasCalculadoraEAVB() {
+ 		
+ 		double a=150;
+ 		double b=332;
+ 		
+ 		CalculadoraEAVB calcu= new CalculadoraEAVB();
+ 		
+ 		System.out.println(calcu.about());
+ 		System.out.println(a+"+"+b+"="+calcu.add(a, b));
+ 		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
+ 		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
+ 		try {
+ 			System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+ 		}catch(ArithmeticException ex) {
+ 			System.out.println("Error: " + ex.getMessage());
+ 		}
+ 	}
+
+     public static void pruebasCalculadoraSTM() {
+ 		double a = 60;
+         double b = 30;
+         CalculadoraJDTG  cal = new CalculadoraJDTG();
+         System.out.println(cal.about());
+
+         System.out.println(a + " + " + b + " = " + cal.add(a, b));
+
+         System.out.println(a + " - " + b + " = " + cal.substract(a, b));
+
+         System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
+         try{
+             System.out.println(a + " / " + b + " = " + cal.divide(a, b));
+         }catch(ArithmeticException ex) {
+             System.out.println("Error: " + ex.getMessage());
+         }
+ 	 }
+
 }
