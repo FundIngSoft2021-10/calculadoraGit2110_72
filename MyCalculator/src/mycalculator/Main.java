@@ -32,7 +32,14 @@ public class Main {
         pruebasCalculadoraSETB();
         pruebasCalculadoraJAMA();
         pruebasCalculadoraDGA();
-    }
+	    pruebasCalculadoraCHG();
+   
+
+
+
+        pruebasCalculadoraCEET();
+
+}
    
     public static void pruebasCalculadoraSETB(){
     	double a=3;
@@ -284,6 +291,49 @@ public class Main {
         }
 		
 		
+    }
+    public static void pruebasCalculadoraCEET(){
+    	double a=22;
+		double b=0;
+		
+		CalculadoraCEET calculadora= new CalculadoraCEET();
+		
+		System.out.println(calculadora.about());
+
+		System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+		System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+		System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+
+        if(b == 0)
+        {
+            System.out.println("Operación imposible, el denominador no puede ser 0");			
+            		
+        }
+        else
+        {
+            System.out.println(a+"/"+b+"="+calculadora.divide(a, b));	
+        }
+		
+		
+    }
+
+    public static void pruebasCalculadoraCHG()
+    {
+        double a = 1;
+        double b = 2;
+        CalculadoraCHG calculadora = new CalculadoraCHG();
+
+        System.out.println(calculadora.about());
+
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
 
