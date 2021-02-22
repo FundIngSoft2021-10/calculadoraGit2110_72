@@ -25,4 +25,5 @@ public class Authors {
     public static final String MAUG = "Miguel Angel Uribe Garcia";
     public static final String JAMA = "Juan Andres Martinez Amado";
     public static final String EAJ = "Estefania Aristizabal Jimenez";
+    public static final String DGA = "David Gutierrez Alarcon";
 }

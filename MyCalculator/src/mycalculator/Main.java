@@ -31,6 +31,7 @@ public class Main {
         pruebasCalculadoraNBS();
         pruebasCalculadoraSETB();
         pruebasCalculadoraJAMA();
+        pruebaCalculadoraDGA();
     }
    
     public static void pruebasCalculadoraSETB(){
@@ -258,4 +259,32 @@ public class Main {
                        System.out.println("Error: " + ex.getMessage());
                }
        }
+
+
+    public static void pruebasCalculadoraDGA(){
+    	double a=1;
+		double b=1;
+		
+		CalculadoraDGA calculadora= new CalculadoraDGA();
+		
+		System.out.println(calculadora.about());
+
+		System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+		System.out.println(a + " - " + b + " = "+calculadora.substract(a, b));
+
+		System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+        if(b != 0)
+        {
+            System.out.println(a+"/"+b+"="+calcu.divide(a, b));			
+        }
+        else
+        {
+            System.out.println("No se puede dividir por 0");			
+        }
+		
+		
+    }
+
+
 }
