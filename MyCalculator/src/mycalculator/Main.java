@@ -31,7 +31,7 @@ public class Main {
         pruebasCalculadoraNBS();
         pruebasCalculadoraSETB();
         pruebasCalculadoraJAMA();
-        pruebaCalculadoraDGA();
+        pruebasCalculadoraDGA();
     }
    
     public static void pruebasCalculadoraSETB(){
