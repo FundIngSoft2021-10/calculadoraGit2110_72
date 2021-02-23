@@ -10,7 +10,7 @@ package mycalculator;
  * @author anmontero
  */
 public class Authors {
-    
+
     public static final String AMP = "Anabel Montero Posada";
     public static final String SFCM = "Samy Felipe Cuestas Merchan";
     public static final String DCFG = "Daniel Camilo Fierro Garcia";
@@ -28,5 +28,7 @@ public class Authors {
     public static final String DGA = "David Gutierrez Alarcon";
     public static final String CHG = "Camilo Hernández Guerrero";
     public static final String CEET = "Carlos Eduardo Escobar Triana";
+    public static final String SCMM = "Sonia Carolina Molina Moreno";
+    
 
 }
