@@ -40,7 +40,7 @@ public class Main {
 
 }
 
-    }
+    
 
     public static void pruebasCalculadoraSETB(){
     	double a=3;
