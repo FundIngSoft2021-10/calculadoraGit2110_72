@@ -275,12 +275,12 @@ public class Main {
 
                CalculadoraEAJ calculEAJ= new CalculadoraEAJ();
 
-               System.out.println(Jama.about());
-               System.out.println(a + " + " + b + " = " + Jama.add(a, b));
-               System.out.println(a + " - " + b + " = " +Jama.substract(a, b));
-               System.out.println(a + " * " + b + " = " +Jama.multiply(a, b));
+               System.out.println(calculEAJ.about());
+               System.out.println(a + " + " + b + " = " +calculEAJ.add(a, b));
+               System.out.println(a + " - " + b + " = " +calculEAJ.substract(a, b));
+               System.out.println(a + " * " + b + " = " +calculEAJ.multiply(a, b));
                try {
-                       System.out.println( a + " / " + b + " = " + Jama.divide(a, b));
+                       System.out.println( a + " / " + b + " = " +calculEAJ.divide(a, b));
                }catch(ArithmeticException ex) {
                        System.out.println("Error: " + ex.getMessage());
                }
