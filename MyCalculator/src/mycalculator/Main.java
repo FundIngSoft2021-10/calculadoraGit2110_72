@@ -433,17 +433,17 @@ public class Main {
         System.out.println(a + " / " + b + " = " + calculator.divide(a, b));
     }
 	
-	public static void pruebasCalculadoraAMC() {
-		double a = 20;
-		double b = 20;
+    public static void pruebasCalculadoraAMC() {
+        double a = 20;
+        double b = 20;
 		
-		CalculadoraAMC calculadora = new CalculadoraAMC();
+        CalculadoraAMC calculadora = new CalculadoraAMC();
 		
-		System.out.println(calculadora.about());
+        System.out.println(calculadora.about());
 		
-		System.out.println(a + " + " + b + " = " + calculator.add(a, b));
-        System.out.println(a + " - " + b + " = " + calculator.substract(a, b));
-        System.out.println(a + " * " + b + " = " + calculator.multiply(a, b));
-        System.out.println(a + " / " + b + " = " + calculator.divide(a, b));
-	}
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
+    }
 }

@@ -31,7 +31,7 @@ public class CalculadoraAMC implements ICalculator {
 
 	@Override
 	public String about() {
-		return "Calculator implementend by" + Authors.AMC;
+		return "Calculator implemented by " + Authors.AMC;
 	}
 
 }

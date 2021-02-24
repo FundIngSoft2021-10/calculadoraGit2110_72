@@ -35,5 +35,5 @@ public class Authors {
     public final static String ATPP = "Angie Tatiana Peña Peña";
     public static final String EBA = "Estefania Bermudez Arroyo";
     public static final String SVS = "Santiago Vasquez Sanchez";
-	public static final String AMC = "Alejandro Morales Contreras";
+    public static final String AMC = "Alejandro Morales Contreras";
 }
