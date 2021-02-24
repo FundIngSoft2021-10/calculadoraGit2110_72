@@ -132,6 +132,25 @@ public class Main {
             System.out.println("Error al dividir: " + x.getMessage());
         }
     }
+    
+    public static void pruebasCalculadoraCDGC() {
+        double num1 = 20, num2 = 20;
+        
+        CalculadoraCDGC obj = new CalculadoraCDGC();
+        System.out.println(obj.about());
+        System.out.println("--Sumando--");
+        System.out.println(num1 + " + " + num2 + " = " + obj.add(num1, num2));
+        System.out.println("--Restando--");
+        System.out.println(num1 + " - " + num2 + " = " + obj.substract(num1, num2));
+        System.out.println("--Multiplicando--");
+        System.out.println(num1 + " * " + num2 + " = " + obj.multiply(num1, num2));
+        try {
+            System.out.println("Dividiendo");
+            System.out.println(num1 + " / " + num2 + " = " + obj.divide(num1, num2));
+        } catch (ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+    }
 
     public static void pruebasCalculadoraSFCM() {
         double a = 80;

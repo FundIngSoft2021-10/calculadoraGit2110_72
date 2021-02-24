@@ -20,6 +20,7 @@ public class Authors {
     public static final String EAVB = "Esteban Alejandro Villa Berrio";
     public static final String JERB = "Juan Esteban Rincon Bautista";
     public static final String SFB = "Santiago Fernandez Becerra";
+    public static final String CDGC = "Cristian David Gonzalez Caceres";
     public static final String DSMC = "David Santiago Meneses Cifuentes";
     public static final String NBS = "Nicolas Barragan Sanchez";
     public static final String MAUG = "Miguel Angel Uribe Garcia";
