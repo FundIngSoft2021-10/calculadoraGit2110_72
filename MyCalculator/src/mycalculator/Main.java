@@ -39,7 +39,24 @@ public class Main {
 
 
 }
+public static void pruebasCalculadoraJRRO() 
+     {
+        double a = 20;
+        double b = 66;
+        CalculadoraJRRO  cal = new CalculadoraJRRO();
+        System.out.println(cal.about());
 
+        System.out.println(a + " + " + b + " = " + cal.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + cal.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
+        try{
+            System.out.println(a + " / " + b + " = " + cal.divide(a, b));
+        }catch(ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+     }
     
 
     public static void pruebasCalculadoraSETB(){
@@ -373,5 +390,5 @@ public class Main {
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
-
+    
 }
