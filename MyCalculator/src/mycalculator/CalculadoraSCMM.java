@@ -7,9 +7,9 @@ package mycalculator;
 
 /**
  *
- * @author david
+ * @author Carolina
  */
-public class CalculadoraDSMC implements ICalculator{
+public class CalculadoraSCMM implements ICalculator{
     @Override
 	public double add(double a, double b) {
 
@@ -35,7 +35,7 @@ public class CalculadoraDSMC implements ICalculator{
 	@Override
 	public String about() {
 
-		return "Calculator implementend by: " + Authors.DSMC;
+		return "Calculator implementend by: " + Authors.SCMM;
 
 	}
 }
