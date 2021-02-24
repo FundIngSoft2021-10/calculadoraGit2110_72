@@ -31,5 +31,5 @@ public class Authors {
     public static final String SCMM = "Sonia Carolina Molina Moreno";
     public static final String JRRO = "Julian Ricardo Rizo Orjuela";
     public final static String AFTA = "Andres Felipe Torres Aldana";
-
+    public final static String MAAS = "Miguel Angel Avila Santos";
 }

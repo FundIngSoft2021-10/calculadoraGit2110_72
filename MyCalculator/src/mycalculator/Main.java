@@ -18,6 +18,7 @@ public class Main {
         Main p = new Main();
         //Create calculator implementation
         System.out.println("Git Calculator!");
+        pruebasCalculadoraMAAS();
         pruebasCalculadoraSFCM();
         pruebasCalculadoraDCFG();
         p.pruebaCalculadoraJACS(1, 0);
@@ -31,19 +32,30 @@ public class Main {
         pruebasCalculadoraNBS();
         pruebasCalculadoraSETB();
         pruebasCalculadoraJAMA();
-	pruebasCalculadoraEAJ();
+        pruebasCalculadoraEAJ();
         pruebasCalculadoraDGA();
-	pruebasCalculadoraCHG();
+        pruebasCalculadoraCHG();
         pruebasCalculadoraCEET();
         pruebasCalculadoraSCMM();
         pruebaCalculadoraAFTA();
 
-}
-public static void pruebasCalculadoraJRRO() 
-     {
+    }
+
+    public static void pruebasCalculadoraMAAS() {
+        double a = 65;
+        double b = 34;
+        CalculadoraMAAS calculadora = new CalculadoraMAAS();
+        System.out.println(calculadora.about());
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
+    }
+
+    public static void pruebasCalculadoraJRRO() {
         double a = 20;
         double b = 66;
-        CalculadoraJRRO  cal = new CalculadoraJRRO();
+        CalculadoraJRRO cal = new CalculadoraJRRO();
         System.out.println(cal.about());
 
         System.out.println(a + " + " + b + " = " + cal.add(a, b));
@@ -51,66 +63,63 @@ public static void pruebasCalculadoraJRRO()
         System.out.println(a + " - " + b + " = " + cal.substract(a, b));
 
         System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
-        try{
+        try {
             System.out.println(a + " / " + b + " = " + cal.divide(a, b));
-        }catch(ArithmeticException ex) {
+        } catch (ArithmeticException ex) {
             System.out.println("Error: " + ex.getMessage());
         }
-     }
-    
-
-    public static void pruebasCalculadoraSETB(){
-    	double a=3;
-		double b=2;
-
-		CalculadoraSETB calcu= new CalculadoraSETB();
-
-		System.out.println(calcu.about());
-		System.out.println(a+"+"+b+"="+calcu.add(a, b));
-		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
-		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
-		try {
-			System.out.println(a+"/"+b+"="+calcu.divide(a, b));
-		}catch(ArithmeticException ex) {
-			System.out.println("Error: " + ex.getMessage());
-		}
     }
 
+    public static void pruebasCalculadoraSETB() {
+        double a = 3;
+        double b = 2;
 
-	public static void pruebasCalculadoraDCFG() {
+        CalculadoraSETB calcu = new CalculadoraSETB();
 
-		double a=15;
-		double b=3;
+        System.out.println(calcu.about());
+        System.out.println(a + "+" + b + "=" + calcu.add(a, b));
+        System.out.println(a + "-" + b + "=" + calcu.substract(a, b));
+        System.out.println(a + "*" + b + "=" + calcu.multiply(a, b));
+        try {
+            System.out.println(a + "/" + b + "=" + calcu.divide(a, b));
+        } catch (ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+    }
 
-		CalculadoraDCFG calcu= new CalculadoraDCFG();
+    public static void pruebasCalculadoraDCFG() {
 
-		System.out.println(calcu.about());
-		System.out.println(a+"+"+b+"="+calcu.add(a, b));
-		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
-		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
-		try {
-			System.out.println(a+"/"+b+"="+calcu.divide(a, b));
-		}catch(ArithmeticException ex) {
-			System.out.println("Error: " + ex.getMessage());
-		}
-	}
+        double a = 15;
+        double b = 3;
 
-	public void pruebaCalculadoraJACS(double a,double b) {
-		CalculatorJACS c = new CalculatorJACS();
-		System.out.println(c.about());
-		System.out.println("Numbers a = " + a + ", b = " + b + "");
-		System.out.println("Addition: " + c.add(a, b));
-		System.out.println("Substraction: " + c.substract(a, b));
-		System.out.println("Product: " + c.multiply(a, b));
-		try {
-			System.out.println("Quotient: " + c.divide(a, b));
-		}catch(ArithmeticException x) {
-			System.out.println("Error al dividir: " + x.getMessage());
-		}
-	}
+        CalculadoraDCFG calcu = new CalculadoraDCFG();
 
-    public static void pruebasCalculadoraSFCM()
-    {
+        System.out.println(calcu.about());
+        System.out.println(a + "+" + b + "=" + calcu.add(a, b));
+        System.out.println(a + "-" + b + "=" + calcu.substract(a, b));
+        System.out.println(a + "*" + b + "=" + calcu.multiply(a, b));
+        try {
+            System.out.println(a + "/" + b + "=" + calcu.divide(a, b));
+        } catch (ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+    }
+
+    public void pruebaCalculadoraJACS(double a, double b) {
+        CalculatorJACS c = new CalculatorJACS();
+        System.out.println(c.about());
+        System.out.println("Numbers a = " + a + ", b = " + b + "");
+        System.out.println("Addition: " + c.add(a, b));
+        System.out.println("Substraction: " + c.substract(a, b));
+        System.out.println("Product: " + c.multiply(a, b));
+        try {
+            System.out.println("Quotient: " + c.divide(a, b));
+        } catch (ArithmeticException x) {
+            System.out.println("Error al dividir: " + x.getMessage());
+        }
+    }
+
+    public static void pruebasCalculadoraSFCM() {
         double a = 80;
         double b = 2;
         CalculadoraSFCM calculadora = new CalculadoraSFCM();
@@ -125,11 +134,10 @@ public static void pruebasCalculadoraJRRO()
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
-    public static void pruebasCalculadoraJDTG()
-    {
+    public static void pruebasCalculadoraJDTG() {
         double a = 30;
         double b = 15;
-        CalculadoraJDTG  calc = new CalculadoraJDTG();
+        CalculadoraJDTG calc = new CalculadoraJDTG();
         System.out.println(calc.about());
 
         System.out.println(a + " + " + b + " = " + calc.add(a, b));
@@ -137,33 +145,33 @@ public static void pruebasCalculadoraJRRO()
         System.out.println(a + " - " + b + " = " + calc.substract(a, b));
 
         System.out.println(a + " * " + b + " = " + calc.multiply(a, b));
-        try{
+        try {
             System.out.println(a + " / " + b + " = " + calc.divide(a, b));
-        }catch(ArithmeticException ex) {
+        } catch (ArithmeticException ex) {
             System.out.println("Error: " + ex.getMessage());
-	}
+        }
     }
-    public static void pruebaCalculadoraJERB()
-    {
+
+    public static void pruebaCalculadoraJERB() {
         double a = 20;
         double b = 10;
         CalculadoraJERB calc = new CalculadoraJERB();
         System.out.println(calc.about());
 
-         System.out.println(a + " + " + b + " = " + calc.add(a, b));
+        System.out.println(a + " + " + b + " = " + calc.add(a, b));
 
         System.out.println(a + " - " + b + " = " + calc.substract(a, b));
 
         System.out.println(a + " * " + b + " = " + calc.multiply(a, b));
 
-       try{
+        try {
             System.out.println(a + " / " + b + " = " + calc.divide(a, b));
-        }catch(ArithmeticException ex) {
+        } catch (ArithmeticException ex) {
             System.out.println("Error: " + ex.getMessage());
-	}
+        }
     }
-    public static void pruebasCalculadoraJCMH()
-    {
+
+    public static void pruebasCalculadoraJCMH() {
         double a = 10;
         double b = 5;
         CalculadoraJCMH calculadora = new CalculadoraJCMH();
@@ -179,7 +187,7 @@ public static void pruebasCalculadoraJRRO()
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
-    public static void pruebasCalculadoraSFB(double a, double b){
+    public static void pruebasCalculadoraSFB(double a, double b) {
 
         CalculadoraSFB calculadora = new CalculadoraSFB();
 
@@ -195,8 +203,7 @@ public static void pruebasCalculadoraJRRO()
 
     }
 
-     public static void pruebasCalculadoraDSMC()
-    {
+    public static void pruebasCalculadoraDSMC() {
         double numa = 1000;
         double numb = 200;
         CalculadoraDSMC calculadora = new CalculadoraDSMC();
@@ -212,152 +219,139 @@ public static void pruebasCalculadoraJRRO()
         System.out.println(numa + " / " + numb + " = " + calculadora.divide(numa, numb));
     }
 
+    public static void pruebasCalculadoraNBS() {
 
+        double a = 20;
+        double b = 2;
+        CalculadoraNBS calculator = new CalculadoraNBS();
 
-     public static void pruebasCalculadoraNBS() {
+        System.out.println("Suma de a y b=" + calculator.add(a, b));
 
-    	double a = 20;
-    	double b = 2;
- 		CalculadoraNBS calculator = new CalculadoraNBS();
+        System.out.println("Resta de a y b=" + calculator.substract(a, b));
 
- 		System.out.println("Suma de a y b="+calculator.add(a, b));
+        System.out.println("Multiplicacion de a y b=" + calculator.multiply(a, b));
 
- 		System.out.println("Resta de a y b="+calculator.substract(a, b));
+        System.out.println("Dividicion de a y b=" + calculator.divide(a, b));
 
- 		System.out.println("Multiplicacion de a y b="+calculator.multiply(a, b));
+    }
 
- 		System.out.println("Dividicion de a y b="+calculator.divide(a, b));
+    public static void pruebasCalculadoraEAVB() {
 
- 	}
+        double a = 150;
+        double b = 332;
 
+        CalculadoraEAVB calcu = new CalculadoraEAVB();
 
-     public static void pruebasCalculadoraEAVB() {
+        System.out.println(calcu.about());
+        System.out.println(a + "+" + b + "=" + calcu.add(a, b));
+        System.out.println(a + "-" + b + "=" + calcu.substract(a, b));
+        System.out.println(a + "*" + b + "=" + calcu.multiply(a, b));
+        try {
+            System.out.println(a + "/" + b + "=" + calcu.divide(a, b));
+        } catch (ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+    }
 
- 		double a=150;
- 		double b=332;
+    public static void pruebasCalculadoraSTM() {
+        double a = 60;
+        double b = 30;
+        CalculadoraJDTG cal = new CalculadoraJDTG();
+        System.out.println(cal.about());
 
- 		CalculadoraEAVB calcu= new CalculadoraEAVB();
+        System.out.println(a + " + " + b + " = " + cal.add(a, b));
 
- 		System.out.println(calcu.about());
- 		System.out.println(a+"+"+b+"="+calcu.add(a, b));
- 		System.out.println(a+"-"+b+"="+calcu.substract(a, b));
- 		System.out.println(a+"*"+b+"="+calcu.multiply(a, b));
- 		try {
- 			System.out.println(a+"/"+b+"="+calcu.divide(a, b));
- 		}catch(ArithmeticException ex) {
- 			System.out.println("Error: " + ex.getMessage());
- 		}
- 	}
+        System.out.println(a + " - " + b + " = " + cal.substract(a, b));
 
-     public static void pruebasCalculadoraSTM() {
- 		double a = 60;
-         double b = 30;
-         CalculadoraJDTG  cal = new CalculadoraJDTG();
-         System.out.println(cal.about());
-
-         System.out.println(a + " + " + b + " = " + cal.add(a, b));
-
-         System.out.println(a + " - " + b + " = " + cal.substract(a, b));
-
-         System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
-         try{
-             System.out.println(a + " / " + b + " = " + cal.divide(a, b));
-         }catch(ArithmeticException ex) {
-             System.out.println("Error: " + ex.getMessage());
-         }
- 	 }
+        System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
+        try {
+            System.out.println(a + " / " + b + " = " + cal.divide(a, b));
+        } catch (ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+    }
 
     public static void pruebasCalculadoraJAMA() {
 
-               double a=10;
-               double b=26;
+        double a = 10;
+        double b = 26;
 
-               CalculadoraJAMA Jama= new CalculadoraJAMA();
+        CalculadoraJAMA Jama = new CalculadoraJAMA();
 
-               System.out.println(Jama.about());
-               System.out.println(a + " + " + b + " = " + Jama.add(a, b));
-               System.out.println(a + " - " + b + " = " +Jama.substract(a, b));
-               System.out.println(a + " * " + b + " = " +Jama.multiply(a, b));
-               try {
-                       System.out.println( a + " / " + b + " = " + Jama.divide(a, b));
-               }catch(ArithmeticException ex) {
-                       System.out.println("Error: " + ex.getMessage());
-               }
-       }
-
-	public static void pruebasCalculadoraEAJ() {
-
-               double a=19999;
-               double b=52;
-
-               CalculadoraEAJ calculEAJ= new CalculadoraEAJ();
-
-               System.out.println(calculEAJ.about());
-               System.out.println(a + " + " + b + " = " +calculEAJ.add(a, b));
-               System.out.println(a + " - " + b + " = " +calculEAJ.substract(a, b));
-               System.out.println(a + " * " + b + " = " +calculEAJ.multiply(a, b));
-               try {
-                       System.out.println( a + " / " + b + " = " +calculEAJ.divide(a, b));
-               }catch(ArithmeticException ex) {
-                       System.out.println("Error: " + ex.getMessage());
-               }
-       }
-
-
-
-    public static void pruebasCalculadoraDGA(){
-    	double a=1;
-		double b=1;
-
-		CalculadoraDGA calculadora= new CalculadoraDGA();
-
-		System.out.println(calculadora.about());
-
-		System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
-
-		System.out.println(a + " - " + b + " = "+calculadora.substract(a, b));
-
-		System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
-        if(b != 0)
-        {
-            System.out.println(a+"/"+b+"="+calculadora.divide(a, b));
+        System.out.println(Jama.about());
+        System.out.println(a + " + " + b + " = " + Jama.add(a, b));
+        System.out.println(a + " - " + b + " = " + Jama.substract(a, b));
+        System.out.println(a + " * " + b + " = " + Jama.multiply(a, b));
+        try {
+            System.out.println(a + " / " + b + " = " + Jama.divide(a, b));
+        } catch (ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
         }
-        else
-        {
+    }
+
+    public static void pruebasCalculadoraEAJ() {
+
+        double a = 19999;
+        double b = 52;
+
+        CalculadoraEAJ calculEAJ = new CalculadoraEAJ();
+
+        System.out.println(calculEAJ.about());
+        System.out.println(a + " + " + b + " = " + calculEAJ.add(a, b));
+        System.out.println(a + " - " + b + " = " + calculEAJ.substract(a, b));
+        System.out.println(a + " * " + b + " = " + calculEAJ.multiply(a, b));
+        try {
+            System.out.println(a + " / " + b + " = " + calculEAJ.divide(a, b));
+        } catch (ArithmeticException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+    }
+
+    public static void pruebasCalculadoraDGA() {
+        double a = 1;
+        double b = 1;
+
+        CalculadoraDGA calculadora = new CalculadoraDGA();
+
+        System.out.println(calculadora.about());
+
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+        if (b != 0) {
+            System.out.println(a + "/" + b + "=" + calculadora.divide(a, b));
+        } else {
             System.out.println("No se puede dividir por 0");
         }
 
-
     }
-    public static void pruebasCalculadoraCEET(){
-    	double a=22;
-		double b=0;
 
-		CalculadoraCEET calculadora= new CalculadoraCEET();
+    public static void pruebasCalculadoraCEET() {
+        double a = 22;
+        double b = 0;
 
-		System.out.println(calculadora.about());
+        CalculadoraCEET calculadora = new CalculadoraCEET();
 
-		System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+        System.out.println(calculadora.about());
 
-		System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
 
-		System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
 
-        if(b == 0)
-        {
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+
+        if (b == 0) {
             System.out.println("Operación imposible, el denominador no puede ser 0");
 
+        } else {
+            System.out.println(a + "/" + b + "=" + calculadora.divide(a, b));
         }
-        else
-        {
-            System.out.println(a+"/"+b+"="+calculadora.divide(a, b));
-        }
-
 
     }
 
-    public static void pruebasCalculadoraCHG()
-    {
+    public static void pruebasCalculadoraCHG() {
         double a = 1;
         double b = 2;
         CalculadoraCHG calculadora = new CalculadoraCHG();
@@ -373,8 +367,7 @@ public static void pruebasCalculadoraJRRO()
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
-    public static void pruebasCalculadoraSCMM()
-    {
+    public static void pruebasCalculadoraSCMM() {
         double a = 21;
         double b = 22;
         CalculadoraCHG calculadora = new CalculadoraSCMM();
@@ -389,14 +382,14 @@ public static void pruebasCalculadoraJRRO()
 
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
-    
+
     public static void pruebaCalculadoraAFTA() {
-    	double a = 21,b = 7;
-    	CalculadoraAFTA cal = new CalculadoraAFTA();
-    	System.out.println(cal.about());
-    	System.out.println(a+" + "+b+" = "+cal.add(a, b));
-    	System.out.println(a+" * "+b+" = "+cal.multiply(a, b));
-    	System.out.println(a+" - "+b+" = "+cal.substract(a, b));
-    	System.out.println(a+" / "+b+" = "+cal.divide(a, b));
+        double a = 21, b = 7;
+        CalculadoraAFTA cal = new CalculadoraAFTA();
+        System.out.println(cal.about());
+        System.out.println(a + " + " + b + " = " + cal.add(a, b));
+        System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
+        System.out.println(a + " - " + b + " = " + cal.substract(a, b));
+        System.out.println(a + " / " + b + " = " + cal.divide(a, b));
     }
 }
