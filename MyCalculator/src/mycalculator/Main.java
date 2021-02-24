@@ -38,7 +38,8 @@ public class Main {
         pruebasCalculadoraCEET();
         pruebasCalculadoraSCMM();
         pruebaCalculadoraAFTA();
-
+        pruebasCalculadoraEBA();
+        pruebasCalculadoraSVS();
     }
 
     public static void pruebasCalculadoraMAAS() {
@@ -391,5 +392,31 @@ public class Main {
         System.out.println(a + " * " + b + " = " + cal.multiply(a, b));
         System.out.println(a + " - " + b + " = " + cal.substract(a, b));
         System.out.println(a + " / " + b + " = " + cal.divide(a, b));
+    }
+    
+    public static void pruebasCalculadoraEBA() {
+        double a = 80;
+        double b = 53;
+        CalculadoraEBA calculadora = new CalculadoraEBA();
+
+        System.out.println(calculadora.about());
+
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
+    }
+    public static void pruebasCalculadoraSVS() {
+        double a = 25,b = 100;
+        CalculadoraSVS calculadora = new CalculadoraSVS();
+        
+        System.out.println(calculadora.about());
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 }
