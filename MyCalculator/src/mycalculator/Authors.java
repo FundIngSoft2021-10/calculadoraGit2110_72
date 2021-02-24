@@ -36,4 +36,5 @@ public class Authors {
     public static final String EBA = "Estefania Bermudez Arroyo";
     public static final String SVS = "Santiago Vasquez Sanchez";
     public static final String AMC = "Alejandro Morales Contreras";
+    public static final String MCAC = "Maria Camila Aguirre Collante";
 }

@@ -42,6 +42,7 @@ public class Main {
         pruebasCalculadoraSVS();
         pruebasCalculadoraATPP();
 		pruebasCalculadoraAMC();
+        pruebasCalculadoraMCAC();
     }
 
     public static void pruebasCalculadoraMAAS() {
@@ -426,7 +427,7 @@ public class Main {
         double a = 26;
         double b = 15;
         CalculadoraATPP calculator = new CalculadoraATPP();
-        System.out.println(calculadora.about());
+        System.out.println(calculator.about());
         System.out.println(a + " + " + b + " = " + calculator.add(a, b));
         System.out.println(a + " - " + b + " = " + calculator.substract(a, b));
         System.out.println(a + " * " + b + " = " + calculator.multiply(a, b));
@@ -445,5 +446,19 @@ public class Main {
         System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
         System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
+    }
+
+    public static void pruebasCalculadoraMCAC() {
+        double a = 86;
+        double b = 42;
+        CalculadoraMCAC calculadora = new CalculadoraMCAC();
+
+        System.out.println(calculadora.about());
+
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
     }
 }
