@@ -43,6 +43,7 @@ public class Main {
         pruebasCalculadoraATPP();
 		pruebasCalculadoraAMC();
         pruebasCalculadoraMCAC();
+        pruebasCalculadoraJTNG();
     }
 
     public static void pruebasCalculadoraMAAS() {
@@ -460,5 +461,16 @@ public class Main {
         System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
 
         System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+    }
+
+    public static void pruebasCalculadoraJTNG() {
+        double a = 64;
+        double b = 28;
+        CalculadoraJTNG calculadora = new CalculadoraJTNG();
+        System.out.println(calculadora.about());
+        System.out.println(a + " + " + b + " = " + calculadora.add(a, b));
+        System.out.println(a + " - " + b + " = " + calculadora.substract(a, b));
+        System.out.println(a + " * " + b + " = " + calculadora.multiply(a, b));
+        System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 }

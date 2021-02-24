@@ -37,4 +37,5 @@ public class Authors {
     public static final String SVS = "Santiago Vasquez Sanchez";
     public static final String AMC = "Alejandro Morales Contreras";
     public static final String MCAC = "Maria Camila Aguirre Collante";
+    public static final String JTNG = "Jessica Tatiana Naizaque Guevara";
 }
