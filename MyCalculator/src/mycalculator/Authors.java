@@ -29,6 +29,6 @@ public class Authors {
     public static final String CHG = "Camilo Hernández Guerrero";
     public static final String CEET = "Carlos Eduardo Escobar Triana";
     public static final String SCMM = "Sonia Carolina Molina Moreno";
-    
+    public final static String AFTA = "Andres Felipe Torres Aldana";
 
 }

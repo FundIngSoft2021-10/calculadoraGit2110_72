@@ -36,7 +36,7 @@ public class Main {
 	pruebasCalculadoraCHG();
         pruebasCalculadoraCEET();
         pruebasCalculadoraSCMM();
-
+        pruebaCalculadoraAFTA();
 
 }
 
@@ -373,5 +373,13 @@ public class Main {
         System.out.println(a + " / " + b + " = " + calculadora.divide(a, b));
     }
 
-
+    public static void pruebaCalculadoraAFTA() {
+    	double a = 21,b = 7;
+    	CalculadoraAFTA cal = new CalculadoraAFTA();
+    	System.out.println(cal.about());
+    	System.out.println(a+" + "+b+" = "+cal.add(a, b));
+    	System.out.println(a+" * "+b+" = "+cal.multiply(a, b));
+    	System.out.println(a+" - "+b+" = "+cal.substract(a, b));
+    	System.out.println(a+" / "+b+" = "+cal.divide(a, b));
+    }
 }
