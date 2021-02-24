@@ -18,32 +18,41 @@ public class Main {
         Main p = new Main();
         //Create calculator implementation
         System.out.println("Git Calculator!");
-        pruebasCalculadoraMAAS();
-        pruebasCalculadoraSFCM();
-        pruebasCalculadoraDCFG();
-        p.pruebaCalculadoraJACS(1, 0);
-        pruebasCalculadoraJDTG();
-        pruebaCalculadoraJERB();
-        pruebasCalculadoraJCMH();
-        pruebasCalculadoraSFB(1, 1);
-        pruebasCalculadoraDSMC();
-        pruebasCalculadoraEAVB();
-        pruebasCalculadoraSTM();
-        pruebasCalculadoraNBS();
-        pruebasCalculadoraSETB();
-        pruebasCalculadoraJAMA();
-        pruebasCalculadoraEAJ();
-        pruebasCalculadoraDGA();
-        pruebasCalculadoraCHG();
-        pruebasCalculadoraCEET();
-        pruebasCalculadoraSCMM();
-        pruebaCalculadoraAFTA();
-        pruebasCalculadoraEBA();
-        pruebasCalculadoraSVS();
-        pruebasCalculadoraATPP();
-		pruebasCalculadoraAMC();
-        pruebasCalculadoraMCAC();
-        pruebasCalculadoraJTNG();
+            pruebasCalculadoraOBM();
+        // pruebasCalculadoraMAAS();
+        // pruebasCalculadoraSFCM();
+        // pruebasCalculadoraDCFG();
+        // p.pruebaCalculadoraJACS(1, 0);
+        // pruebasCalculadoraJDTG();
+        // pruebaCalculadoraJERB();
+        // pruebasCalculadoraJCMH();
+        // pruebasCalculadoraSFB(1, 1);
+        // pruebasCalculadoraDSMC();
+        // pruebasCalculadoraEAVB();
+        // pruebasCalculadoraSTM();
+        // pruebasCalculadoraNBS();
+        // pruebasCalculadoraSETB();
+        // pruebasCalculadoraJAMA();
+        // pruebasCalculadoraEAJ();
+        // pruebasCalculadoraDGA();
+        // pruebasCalculadoraCHG();
+        // pruebasCalculadoraCEET();
+        // pruebasCalculadoraSCMM();
+        // pruebaCalculadoraAFTA();
+        // pruebasCalculadoraEBA();
+        // pruebasCalculadoraSVS();
+        // pruebasCalculadoraATPP();
+		// pruebasCalculadoraAMC();
+        // pruebasCalculadoraMCAC();
+        // pruebasCalculadoraJTNG();
+    }
+    public static void pruebasCalculadoraOBM(){
+        CalculadoraOBM calculadora = new CalculadoraOBM();
+        System.out.println(calculadora.about());
+        System.out.println(calculadora.add(2.5, 3.4));
+        System.out.println(calculadora.substract(5.2, 0.2));
+        System.out.println(calculadora.multiply(100.0, 0.7));
+        System.out.println(calculadora.divide(4.4, 2.0));
     }
 
     public static void pruebasCalculadoraMAAS() {
