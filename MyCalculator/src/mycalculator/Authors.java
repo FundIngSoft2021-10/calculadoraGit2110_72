@@ -33,4 +33,5 @@ public class Authors {
     public final static String AFTA = "Andres Felipe Torres Aldana";
     public final static String MAAS = "Miguel Angel Avila Santos";
     public static final String EBA = "Estefania Bermudez Arroyo";
+    public static final String SVS = "Santiago Vasquez Sanchez";
 }
