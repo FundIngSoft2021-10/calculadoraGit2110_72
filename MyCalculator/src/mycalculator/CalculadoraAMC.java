@@ -7,7 +7,7 @@ package mycalculator;
  * @author Alejandro
  *
  */
-public class CalculadoraEBA implements ICalculator {
+public class CalculadoraAMC implements ICalculator {
 
 	@Override
 	public double add(double a, double b) {
